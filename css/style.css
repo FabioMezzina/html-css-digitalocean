@@ -9,6 +9,7 @@ h3,
 h4 {
   margin-top: 0;
   color: #031c4e;
+  font-weight: 700;
 }
 
 h1 {
@@ -36,10 +37,19 @@ p {
 h1 + p {
   color: #bbcdff;
   font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 32px;
 }
 
 h2 + p {
   font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 32px;
+}
+
+h3 + p {
+  font-size: 15px;
+  font-weight: 500;
 }
 
 a {
@@ -233,6 +243,34 @@ a:hover {
   margin-right: 30px;
 }
 
+/* DEPLOY AND SCALE */
+.deploy-list {
+  margin-left: 15px;
+  margin-bottom: 30px;
+  text-align: left;
+  font-size: 18px;
+  border-left: 2px solid #ccc;
+}
+
+.deploy-list li {
+  margin: 10px 0;
+}
+
+.deploy-list a {
+  color: #75809a;
+  font-weight: 500;
+}
+
+.deploy-list a:hover,
+.deploy-list a:focus {
+  text-decoration: none;
+  color: #031c4e;
+}
+
+.feature * {
+  margin-bottom: 15px;
+}
+
 /* TABLET */
 @media screen and (min-width: 768px) {
   .account-form {
@@ -247,6 +285,11 @@ a:hover {
   #customers li:not(:last-of-type) {
     margin-right: 10px;
   }
+
+  .deploy-list {
+    margin-left: 8.33333333%;
+  }
+
 }
 
 /* DESKTOP */
@@ -278,6 +321,11 @@ a:hover {
 
   h2 + p {
     font-size: 20px;
+  }
+
+  h3 + p {
+    font-size: 16px;
+    font-weight: 500;
   }
 
   .navbar-default .navbar-header a {
