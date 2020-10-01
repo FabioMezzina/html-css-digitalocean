@@ -219,9 +219,34 @@ a:hover {
   border: 0;
 }
 
+/* CUSTOMERS */
+#customers h3 {
+  color: #6f7b97;
+}
+
+#customers li {
+  width: 40%;
+  vertical-align: middle;
+}
+
+#customers li:nth-of-type(2n+1) {
+  margin-right: 30px;
+}
+
 /* TABLET */
 @media screen and (min-width: 768px) {
+  .account-form {
+    padding: 32px 16px;
+  }
 
+  #customers li {
+    width: 15%;
+    vertical-align: middle;
+  }
+
+  #customers li:not(:last-of-type) {
+    margin-right: 10px;
+  }
 }
 
 /* DESKTOP */
