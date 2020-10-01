@@ -4,39 +4,50 @@ body {
 }
 
 /* TYPOGRAPHY */
-h1,
 h2,
 h3,
 h4 {
+  margin-top: 0;
   color: #031c4e;
 }
 
 h1 {
-  font-size: 58px;
+  margin-top: 0;
+  font-size: 46px;
+  color: #fff;
 }
 
 h2 {
-  font-size: 36px;
+  font-size: 32px;
 }
 
 h3 {
-  font-size: 18px;
-}
-
-h4 {
-  font-size: 14px;
-}
-
-p {
   font-size: 16px;
 }
 
+h4 {
+  font-size: 12px;
+}
+
+p {
+  font-size: 14px;
+}
+
 h1 + p {
+  color: #bbcdff;
   font-size: 24px;
 }
 
 h2 + p {
   font-size: 20px;
+}
+
+a {
+  color: #006aff;
+}
+
+a:hover {
+  color: #0049ff;
 }
 
 /* UTILITIES */
@@ -58,6 +69,10 @@ h2 + p {
 
 .bg-blue {
   background: linear-gradient(0deg, rgba(0,16,154,1) 0%, rgba(0,66,187,1) 100%);
+}
+
+.btn {
+  position: relative;
 }
 
 /* HEADER */
@@ -143,8 +158,103 @@ h2 + p {
   border: 1px solid #3a8aff;
 }
 
+/* hero */
+.hero {
+  background-image: url('../img/bg-banner-home.jpg');
+}
+
+.account-form {
+  padding: 64px 16px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.account-form .btn {
+  margin-bottom: 10px;
+}
+
+.creat-account {
+  background: #579aff;
+  color: #fff;
+  font-weight: 500;
+  border: 1px solid transparent;
+  transition: .2s;
+}
+
+.creat-account:hover,
+.btn.btn-default.creat-account:active,
+.btn.btn-default.creat-account:focus {
+  color: #fff;
+  background: #0049ff;
+  box-shadow: #0049ff;
+}
+
+.google-account {
+  color: #626262;
+  font-weight: 500;
+  border: 1px solid transparent;
+  box-shadow: 1px 1px 2px lightgrey;
+  transition: .2s;
+}
+
+.google-account:hover {
+  background: #fafafa;
+  color: #444;
+  border: 1px solid #fafafa;
+}
+
+.btn.btn-default.google-account:active,
+.btn.btn-default.google-account:focus {
+  background: #fafafa;
+  color: #444;
+  border: 1px solid #fafafa;
+  box-shadow: inset 1px 1px 4px rgba(0,0,0,0.125);
+}
+
+.google-icon {
+  display: inline-block;
+  position: absolute;
+  left: 15px;
+  max-height: 17px;
+  border: 0;
+}
+
+/* TABLET */
+@media screen and (min-width: 768px) {
+
+}
+
 /* DESKTOP */
 @media screen and (min-width: 992px) {
+  h1 {
+    font-size: 58px;
+  }
+
+  h2 {
+    font-size: 36px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  h4 {
+    font-size: 14px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  h1 + p {
+    color: #bbcdff;
+    font-size: 24px;
+  }
+
+  h2 + p {
+    font-size: 20px;
+  }
+
   .navbar-default .navbar-header a {
     margin-right: 50px;
   }
