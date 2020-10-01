@@ -276,6 +276,10 @@ a:hover {
   margin-bottom: 15px;
 }
 
+#feature-section h2 {
+  margin-bottom: 32px;
+}
+
 .feature a {
   display: inline-block;
 }
