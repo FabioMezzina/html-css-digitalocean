@@ -267,9 +267,21 @@ a:hover {
   color: #031c4e;
 }
 
+.feature {
+  text-align: left;
+  margin-bottom: 15px;
+}
+
 .feature * {
   margin-bottom: 15px;
 }
+
+.feature a {
+  display: inline-block;
+}
+
+/* CONTROL PANEL */
+
 
 /* TABLET */
 @media screen and (min-width: 768px) {
@@ -284,6 +296,10 @@ a:hover {
 
   #customers li:not(:last-of-type) {
     margin-right: 10px;
+  }
+
+  .feature *:last-child {
+    margin-bottom: 0;
   }
 
   .deploy-list {
