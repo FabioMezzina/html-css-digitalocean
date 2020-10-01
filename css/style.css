@@ -1,0 +1,61 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #5c6a88;
+}
+
+/* TYPOGRAPHY */
+h1,
+h2,
+h3,
+h4 {
+  color: #031c4e;
+}
+
+h1 {
+  font-size: 58px;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 14px;
+}
+
+p {
+  font-size: 16px;
+}
+
+h1 + p {
+  font-size: 24px;
+}
+
+h2 + p {
+  font-size: 20px;
+}
+
+/* UTILITIES */
+.ptb120 {
+  padding: 120px 0;
+}
+
+.ptb64 {
+  padding: 64px 0;
+}
+
+.color-white {
+  color: #fff;
+}
+
+.bg-grey {
+  background: #f3f5f9;
+}
+
+.bg-blue {
+  background: linear-gradient(0deg, rgba(0,16,154,1) 0%, rgba(0,66,187,1) 100%);
+}
