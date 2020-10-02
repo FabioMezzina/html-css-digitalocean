@@ -27,7 +27,8 @@ h3 {
 }
 
 h4 {
-  font-size: 12px;
+  margin-bottom: 0;
+  font-size: 14px;
 }
 
 p {
@@ -75,6 +76,10 @@ a:hover {
 
 .color-white * {
   color: #fff;
+}
+
+.bg-white {
+  background: #fff;
 }
 
 .bg-grey {
@@ -313,10 +318,6 @@ a:hover {
   margin-bottom: 15px;
 }
 
-#feature-section h2 {
-  margin-bottom: 32px;
-}
-
 .feature a {
   display: inline-block;
 }
@@ -345,6 +346,37 @@ a:hover {
 
 #speed-test .pull-right a {
   color: #00d5d1;
+}
+
+/* STORY */
+#story .scroll-img {
+  padding: 32px 0;
+}
+
+#story img + p {
+  font-size: 24px;
+}
+
+#story h4 + p {
+  color: #031c4e;
+}
+
+/* GET STARTED */
+.create-account-2,
+.btn.btn-default.create-account-2:focus {
+  padding: 10px 16px;
+  font-weight: 500;
+  color: #006aff;
+  background: #fff;
+  border: 1px solid #cccccc;
+  transition: .3s;
+}
+
+.btn.btn-default.create-account-2:hover {
+  background: #fff;
+  color: #006aff;
+  border: 1px solid #cccccc;
+  transform: scale(1.2);
 }
 
 /* TABLET */
@@ -418,5 +450,9 @@ a:hover {
 
   #control-panel div.mb64 {
     margin-bottom: 16px;
+  }
+
+  #story .scroll-img {
+    padding: 64px 0;
   }
 }
