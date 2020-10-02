@@ -452,6 +452,72 @@ ul.list-unstyled li a:hover {
   color: #0080ff;
 }
 
+/* HELP */
+.help {
+  position: fixed;
+  left: 40px;
+  bottom: 40px;
+  width: 100%;
+}
+
+.help-fish {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  background: #006aff;
+  border-radius: 5px;
+}
+
+.help-fish img {
+  position: absolute;
+  width: 60px;
+  bottom: 5px;
+}
+
+.help-fish .notifics {
+  position: absolute;
+  background: red;
+  top: 0;
+  right: 0;
+  transform: translate(30%, -30%);
+  width: 30px;
+  height: 30px;
+  border: 3px solid #fff;
+  border-radius: 50%;
+}
+
+.help-fish:hover + div.help-text {
+  opacity: 1;
+}
+
+.help-text {
+  position: relative;
+  width: 350px;
+  padding: 10px 40px 10px 10px;
+  color: #031c4e;
+  background: #fff;
+  border-radius: 5px;
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.4));
+  opacity: 0;
+  transition: .2s;
+}
+
+.help-text::before {
+  display: block;
+  width: 10px;
+  height: 10px;
+  background: #fff;
+  content: '';
+  transform: rotate(45deg);
+  position: absolute;
+  right: -5px;
+  top: 60%;
+}
+
+.help-text p {
+  margin-bottom: 0;
+}
+
 /* hide logo below 270px */
 @media screen and (max-width: 270px) {
   .navbar-brand {
@@ -539,5 +605,19 @@ ul.list-unstyled li a:hover {
 
   #story .scroll-img {
     padding: 64px 0;
+  }
+
+  .help {
+    left: 100%;
+    transform: translateX(calc(-100% - 40px));
+  }
+
+  .help-fish {
+    float: right;
+  }
+
+  .help-text {
+    float: right;
+    margin-right: 20px;
   }
 }
