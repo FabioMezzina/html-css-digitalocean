@@ -73,7 +73,7 @@ a:hover {
   margin-bottom: 64px;
 }
 
-.color-white {
+.color-white * {
   color: #fff;
 }
 
@@ -271,24 +271,6 @@ a:hover {
   color: #031c4e;
 }
 
-/* FEATURE */
-.feature {
-  text-align: left;
-  margin-bottom: 15px;
-}
-
-.feature * {
-  margin-bottom: 15px;
-}
-
-#feature-section h2 {
-  margin-bottom: 32px;
-}
-
-.feature a {
-  display: inline-block;
-}
-
 /* CONTROL PANEL */
 .scroll-right,
 .scroll-left {
@@ -319,6 +301,50 @@ a:hover {
 #control-panel span {
   font-weight: 500;
   color: #031c4e;
+}
+
+/* FEATURE */
+.feature {
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.feature * {
+  margin-bottom: 15px;
+}
+
+#feature-section h2 {
+  margin-bottom: 32px;
+}
+
+.feature a {
+  display: inline-block;
+}
+
+/* SPEED TEST */
+#speed-test .city-row {
+  margin-bottom: 0;
+  border-bottom: 1px solid #fff;
+}
+
+#speed-test .city-row li {
+  padding: 10px 10px;
+}
+
+#speed-test .city-row li.pull-left {
+
+}
+
+#speed-test .city-row li.pull-left:nth-of-type(1) {
+  width: 60px;
+}
+
+#speed-test .city-row li.pull-left:nth-of-type(2) {
+  color: #bbc7e7;
+}
+
+#speed-test .pull-right a {
+  color: #00d5d1;
 }
 
 /* TABLET */
