@@ -58,7 +58,8 @@ a {
 }
 
 a:hover {
-  color: #0049ff;
+  color: #031c4e;
+  text-decoration: none;
 }
 
 /* UTILITIES */
@@ -359,6 +360,10 @@ a:hover {
   color: #00d5d1;
 }
 
+#speed-test .pull-right a:hover {
+  color: #fff;
+}
+
 /* STORY */
 #story .scroll-img {
   padding: 32px 0;
@@ -420,6 +425,12 @@ footer .list-inline i {
 
 footer .list-inline a {
   color: #7a859d;
+  transition: .2s;
+}
+
+footer .list-inline a:hover,
+footer .list-inline a:focus {
+  color: #0080ff;
 }
 
 ul.list-unstyled h3 {
@@ -434,6 +445,11 @@ ul.list-unstyled li a {
   font-size: 16px;
   font-weight: 500;
   color: #a6adbd;
+  transition: .1s;
+}
+
+ul.list-unstyled li a:hover {
+  color: #0080ff;
 }
 
 /* hide logo below 270px */
