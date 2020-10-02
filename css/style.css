@@ -61,12 +61,16 @@ a:hover {
 }
 
 /* UTILITIES */
-.ptb120 {
-  padding: 120px 0;
-}
-
 .ptb64 {
   padding: 64px 0;
+}
+
+.mb32 {
+  margin-bottom: 32px;
+}
+
+.mb64 {
+  margin-bottom: 64px;
 }
 
 .color-white {
@@ -183,7 +187,7 @@ a:hover {
   margin-bottom: 10px;
 }
 
-.creat-account {
+.create-account {
   background: #579aff;
   color: #fff;
   font-weight: 500;
@@ -191,9 +195,9 @@ a:hover {
   transition: .2s;
 }
 
-.creat-account:hover,
-.btn.btn-default.creat-account:active,
-.btn.btn-default.creat-account:focus {
+.create-account:hover,
+.btn.btn-default.create-account:active,
+.btn.btn-default.create-account:focus {
   color: #fff;
   background: #0049ff;
   box-shadow: #0049ff;
@@ -267,6 +271,7 @@ a:hover {
   color: #031c4e;
 }
 
+/* FEATURE */
 .feature {
   text-align: left;
   margin-bottom: 15px;
@@ -285,7 +290,36 @@ a:hover {
 }
 
 /* CONTROL PANEL */
+.scroll-right,
+.scroll-left {
+  position: absolute;
+  font-size: 50px;
+}
 
+.scroll-left {
+  top: 50%;
+  left: -35px;
+  transform: translateY(-50%);
+}
+
+.scroll-right {
+  top: 50%;
+  right: -35px;
+  transform: translateY(-50%);
+}
+
+.scroll-left i {
+  color: #6f7b97;
+}
+
+.scroll-right i {
+  color: #031c4e;
+}
+
+#control-panel span {
+  font-weight: 500;
+  color: #031c4e;
+}
 
 /* TABLET */
 @media screen and (min-width: 768px) {
@@ -302,14 +336,18 @@ a:hover {
     margin-right: 10px;
   }
 
-  .feature *:last-child {
-    margin-bottom: 0;
+  .scroll-img {
+    position: relative;
+    margin: 0 35px;
   }
 
   .deploy-list {
     margin-left: 8.33333333%;
   }
 
+  .feature *:last-child {
+    margin-bottom: 0;
+  }
 }
 
 /* DESKTOP */
@@ -350,5 +388,9 @@ a:hover {
 
   .navbar-default .navbar-header a {
     margin-right: 50px;
+  }
+
+  #control-panel div.mb64 {
+    margin-bottom: 16px;
   }
 }
