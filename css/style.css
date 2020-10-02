@@ -237,7 +237,9 @@ a:hover {
   display: inline-block;
   position: absolute;
   left: 15px;
-  max-height: 17px;
+  top: 50%;
+  transform: translateY(-50%);
+  max-height: 18px;
   border: 0;
 }
 
@@ -301,11 +303,14 @@ a:hover {
   transform: translateY(-50%);
 }
 
-.scroll-left i {
+.scroll-left i,
+.scroll-right i {
   color: #6f7b97;
+  transition: .2s;
 }
 
-.scroll-right i {
+.scroll-left a:hover i,
+.scroll-right a:hover i {
   color: #031c4e;
 }
 
