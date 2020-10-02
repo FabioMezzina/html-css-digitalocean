@@ -457,7 +457,7 @@ ul.list-unstyled li a:hover {
   position: fixed;
   left: 40px;
   bottom: 40px;
-  width: 100%;
+  width: 450px;
 }
 
 .help-fish {
@@ -493,10 +493,6 @@ ul.list-unstyled li a:hover {
   border-radius: 50%;
 }
 
-.help-fish:hover + div.help-text {
-  opacity: 1;
-}
-
 .help-text {
   position: relative;
   width: 350px;
@@ -505,8 +501,8 @@ ul.list-unstyled li a:hover {
   background: #fff;
   border-radius: 5px;
   filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.4));
-  opacity: 0;
-  transition: .2s .1s;
+  /* opacity: 0;
+  transition: .2s .1s; */
 }
 
 .help-text::before {
@@ -562,10 +558,6 @@ ul.list-unstyled li a:hover {
   }
 
   .feature *:last-child {
-    margin-bottom: 0;
-  }
-
-  .help-fish {
     margin-bottom: 0;
   }
 }
@@ -625,10 +617,20 @@ ul.list-unstyled li a:hover {
 
   .help-fish {
     float: right;
+    margin-bottom: 0;
   }
 
   .help-text {
     float: right;
     margin-right: 20px;
+  }
+
+  .help-text {
+    opacity: 0;
+  }
+
+  .help-fish:hover + div.help-text {
+    opacity: 1;
+    transition: .2s .1s;
   }
 }
