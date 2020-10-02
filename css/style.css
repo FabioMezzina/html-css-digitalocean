@@ -468,9 +468,16 @@ ul.list-unstyled li a:hover {
   border-radius: 5px;
 }
 
+/* .help-fish */
+
+.help-fish a {
+  display: block;
+  width: 60px;
+  height: 60px;
+}
+
 .help-fish img {
   position: absolute;
-  width: 60px;
   bottom: 5px;
 }
 
@@ -499,7 +506,7 @@ ul.list-unstyled li a:hover {
   border-radius: 5px;
   filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.4));
   opacity: 0;
-  transition: .2s;
+  transition: .2s .1s;
 }
 
 .help-text::before {
@@ -555,6 +562,10 @@ ul.list-unstyled li a:hover {
   }
 
   .feature *:last-child {
+    margin-bottom: 0;
+  }
+
+  .help-fish {
     margin-bottom: 0;
   }
 }
