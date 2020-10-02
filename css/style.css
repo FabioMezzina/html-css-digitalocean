@@ -66,6 +66,10 @@ a:hover {
   padding: 64px 0;
 }
 
+.mb16 {
+  margin-bottom: 16px;
+}
+
 .mb32 {
   margin-bottom: 32px;
 }
@@ -377,6 +381,52 @@ a:hover {
   color: #006aff;
   border: 1px solid #cccccc;
   transform: scale(1.2);
+}
+
+/* FOOTER */
+footer {
+  color: #a6adbd;
+  background: #031c4e;
+}
+
+footer img {
+  margin-bottom: 10px;
+}
+
+footer img ~ p {
+  font-weight: 500;
+  font-size: 16px;
+  margin-bottom: 0;
+}
+
+footer img + p + p {
+  color: #5a6887;
+}
+
+footer .list-inline {
+  padding: 15px 0;
+}
+
+footer .list-inline i {
+  font-size: 24px;
+}
+
+footer .list-inline a {
+  color: #7a859d;
+}
+
+ul.list-unstyled h3 {
+  font-size: 18px;
+}
+
+ul.list-unstyled li {
+  margin: 10px 0;
+}
+
+ul.list-unstyled li a {
+  font-size: 16px;
+  font-weight: 500;
+  color: #a6adbd;
 }
 
 /* TABLET */
