@@ -96,7 +96,7 @@ a:hover {
   background: linear-gradient(0deg, rgba(0,16,154,1) 0%, rgba(0,66,187,1) 100%);
 }
 
-.btn {
+.pos-rel {
   position: relative;
 }
 
@@ -111,10 +111,6 @@ a:hover {
   margin-bottom: 0;
   border: 0;
   background-color: #fff;
-}
-
-.navbar-header {
-  position: relative;
 }
 
 .navbar-default .navbar-nav > li {
@@ -170,6 +166,7 @@ a:hover {
   transform: translateY(-50%);
   border: 1px solid transparent;
   transition: .2s;
+  z-index: 1;
 }
 
 .navbar-default .navbar-toggle .icon-bar {
@@ -237,7 +234,6 @@ a:hover {
 }
 
 .google-icon {
-  display: inline-block;
   position: absolute;
   left: 15px;
   top: 50%;
@@ -463,7 +459,6 @@ ul.list-unstyled li a:hover {
 }
 
 .help-fish {
-  position: relative;
   width: 60px;
   height: 60px;
   background: #006aff;
@@ -494,7 +489,6 @@ ul.list-unstyled li a:hover {
 }
 
 .help-text {
-  position: relative;
   width: 350px;
   padding: 10px 40px 10px 10px;
   color: #031c4e;
@@ -531,6 +525,19 @@ ul.list-unstyled li a:hover {
   }
 }
 
+/* HAMBURGER VISIBILITY */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .navbar-toggle {
+    display: block;
+    position: absolute;
+    right: 0;
+  }
+
+  .navbar-collapse {
+    display: none;
+  }
+}
+
 /* TABLET */
 @media screen and (min-width: 768px) {
   .account-form {
@@ -547,7 +554,6 @@ ul.list-unstyled li a:hover {
   }
 
   .scroll-img {
-    position: relative;
     margin: 0 35px;
   }
 

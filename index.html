@@ -7,7 +7,7 @@
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <!-- Style -->
     <link rel="stylesheet" href="./css/style.css">
     <title>Digital Ocean</title>
@@ -17,10 +17,10 @@
     <header>
       <!-- navbar -->
       <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
+        <div class="container pos-rel">
           <!-- Brand and toggle get grouped for better mobile display -->
           <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
               <span class="sr-only">Toggle navigation</span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
@@ -31,7 +31,7 @@
             </a>
           </div>
           <!-- Collect the nav links, forms, and other content for toggling -->
-          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <div class="navbar-collapse hidden-xs hidden-sm" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
               <li><a href="#">Product <i class="fas fa-chevron-down"></i></a></li>
               <li><a href="#">Customers</a></li>
@@ -45,7 +45,7 @@
               <li class="login"><a href="#" class="btn btn-default navbar-btn">Sign up</a></li>
             </ul>
           </div><!-- /.navbar-collapse -->
-        </div><!-- /.container-fluid -->
+        </div><!-- /.container -->
       </nav>
       <!-- hero -->
       <section class="hero ptb64">
@@ -68,7 +68,7 @@
                     <input type="password" class="form-control" placeholder="Password">
                   </div>
                   <button type="submit" class="btn btn-default btn-block create-account">Create your account</button>
-                  <a type="submit" class="btn btn-default btn-block google-account">
+                  <a type="submit" class="btn btn-default btn-block google-account pos-rel">
                     <img class="google-icon" src="./img/google-icon.png" alt="Google">
                     Sign up with Google
                   </a>
@@ -188,7 +188,7 @@
             <p>Build more and spend less time managing your infrastructure with our easy-to-use control panel and API.</p>
           </div>
           <div class="col-xs-8 col-xs-offset-2 mb32">
-            <div class="scroll-img">
+            <div class="scroll-img pos-rel">
               <div class="scroll-right hidden-xs">
                 <a href="#"><i class="fas fa-angle-right"></i></a>
               </div>
@@ -345,7 +345,7 @@
             <h2>Development teams love DigitalOcean</h2>
           </div>
           <div class="col-xs-8 col-xs-offset-2 mb32">
-            <div class="scroll-img bg-white">
+            <div class="scroll-img bg-white pos-rel">
               <div class="scroll-right hidden-xs">
                 <a href="#"><i class="fas fa-angle-right"></i></a>
               </div>
@@ -533,15 +533,15 @@
     </footer>
     <!-- HELP -->
     <div class="help clearfix">
-      <div class="help-fish mb16">
+      <div class="help-fish mb16 pos-rel">
         <a href="#">
           <img class="img-responsive" src="./img/chat-img.png" alt="Help fish">
           <div class="notifics text-center color-white">
-            <span>2<span>
+            <span>2</span>
           </div>
         </a>
       </div>
-      <div class="help-text">
+      <div class="help-text pos-rel">
         <p>Can I help answer any questions you have about DigitalOcean?</p>
       </div>
     </div>
